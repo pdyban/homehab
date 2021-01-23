@@ -1,24 +1,10 @@
-import logo from './logo.svg';
-// Importing Sass with Bootstrap CSS
 import './App.scss';
+import DateTime from './components/DateTime/DateTime.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DateTime date="Wed, 12th Nov 2019" />
     </div>
   );
 }
