@@ -3,6 +3,8 @@
 This web app offers Apple Homekit-inspired user interface for controlling
 your OpenHAB-managed smart home.
 
+A running web app can be found on Heroku: [https://homehab.herokuapp.com/](https://homehab.herokuapp.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
