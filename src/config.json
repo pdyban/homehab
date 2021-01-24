@@ -1,0 +1,41 @@
+{
+  "common": {
+    "serverURL": "http://openhab:8080"
+  },
+  "widgets": [
+    {
+      "name": "datetime",
+      "type": "DateTime"
+    },
+    {
+      "name": "presence",
+      "type": "Presence"
+    },
+    {
+      "name": "Living Room",
+      "type": "RoomWidget",
+      "elements": [
+        {
+          "id": "livingroom_temperature",
+          "name": "Temperature",
+          "refreshRate": 30
+        },
+        {
+          "id": "livingroom_humidity",
+          "name": "Humidity",
+          "refreshRate": 60
+        }
+      ]
+    },
+    {
+      "name": "Bathroom",
+      "type": "RoomWidget",
+      "elements": []
+    },
+    {
+      "name": "Vacuum Cleaner",
+      "type": "DeviceWidget",
+      "elements": []
+    }
+  ]
+}

@@ -14,7 +14,7 @@ class RoomWidget extends Component {
 
   render() {
     return (
-      <div><h3>Room {this.props.name}</h3></div>
+      <div><h3>Room: {this.props.name}</h3></div>
     )
   }
 }

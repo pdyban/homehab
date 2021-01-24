@@ -16,11 +16,25 @@ class WidgetBar extends Component {
   componentWillUnmount() {}
 
   render() {
+    var widgets = [];
+    for(const [index, w] of this.props.config.widgets.entries()) {
+      console.log(w);
+      switch (w.type) {
+        case 'RoomWidget':
+            widgets.push(<RoomWidget name={w.name} key={index} />)
+          break;
+        case 'DeviceWidget':
+            widgets.push(<DeviceWidget name={w.name} key={index} />)
+          break;
+        default:
+          console.warn('Unknown widget type ' + w.type);
+          break;
+      }
+    }
+    console.log(widgets);
     return (
       <div>
-        <DeviceWidget name="Vacuum Cleaner" />
-        <RoomWidget name="Living Room" />
-        <RoomWidget name="Bathroom" />
+      {widgets}
       </div>
     )
   }
