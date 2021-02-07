@@ -14,7 +14,7 @@ class DateTime extends Component {
 
   render() {
     return (
-      <div><h3>Item ID: {this.itemID}</h3></div>
+      <div><h3>Today: {this.itemID}</h3></div>
     )
   }
 }

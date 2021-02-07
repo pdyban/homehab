@@ -10,10 +10,9 @@ class App extends Component {
   // }
 
   render() {
-    console.log(this.props.config);
     let dateTimeWidget;
     let presenceWidget;
-    let widgets = []
+    let widgets = [];
     for(const w of this.props.config.widgets) {
       switch(w.type) {
         case 'DateTime':
@@ -26,12 +25,11 @@ class App extends Component {
           widgets.push(w);
           break;
       }
-    }
+    };
     let widgetBarConfig = {
       'common': this.props.config.common,
       'widgets': widgets
     };
-    <WidgetBar config={this.props.config} />
     return (
       <div className="App">
       { dateTimeWidget }
