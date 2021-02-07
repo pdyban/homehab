@@ -1,4 +1,22 @@
 @import "custom";
+$bg-url: url("./assets/background.jpg");
+
+body, html {
+  height: 100vh;
+}
+
+.App {
+  /* The image used */
+  background-image: $bg-url;
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .header {
   text-align: center;
