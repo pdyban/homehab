@@ -4,23 +4,25 @@ import DateTime from './components/DateTime/DateTime';
 import Presence from './components/Presence/Presence';
 import WidgetBar from './components/WidgetBar/WidgetBar'
 import testConfig from './config.test.json';
-import { rest } from 'msw';
-import { setupServer } from 'msw/node';
+import background from './assets/background.jpg';
+// import { rest } from 'msw';
+// import { setupServer } from 'msw/node';
 
 // mock OpenHAB ReST API endpoints for testing
-const server = setupServer(
-  rest.get('/items', (req, res, ctx) => {
-    return res(ctx.json({ greeting: 'hello there' }))
-  })
-);
-
-beforeAll(() => server.listen());
-afterEach(() => server.resetHandlers());
-afterAll(() => server.close());
+// const server = setupServer(
+//   rest.get('/items', (req, res, ctx) => {
+//     return res(ctx.json({ greeting: 'hello there' }))
+//   })
+// );
+//
+// beforeAll(() => server.listen());
+// afterEach(() => server.resetHandlers());
+// afterAll(() => server.close());
 
 describe('HomeHAB test suite', () => {
   test('Render App', () => {
     render(<App config={testConfig} />);
+    expect(screen.getByTestId('background').style).toHaveProperty('background-image');
   });
 
   test('Render DateTime widget', () => {

@@ -31,7 +31,7 @@ class App extends Component {
       'widgets': widgets
     };
     return (
-      <div className="App">
+      <div className="App" data-testid="background">
       { dateTimeWidget }
       { presenceWidget }
       <WidgetBar config={widgetBarConfig} />

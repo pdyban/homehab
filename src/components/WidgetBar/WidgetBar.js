@@ -18,7 +18,6 @@ class WidgetBar extends Component {
   render() {
     var widgets = [];
     for(const [index, w] of this.props.config.widgets.entries()) {
-      console.log(w);
       switch (w.type) {
         case 'RoomWidget':
             widgets.push(<RoomWidget name={w.name} key={index} config={w} />)
@@ -31,7 +30,6 @@ class WidgetBar extends Component {
           break;
       }
     }
-    console.log(widgets);
     return (
       <div>
       {widgets}
