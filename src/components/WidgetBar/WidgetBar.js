@@ -21,10 +21,10 @@ class WidgetBar extends Component {
       console.log(w);
       switch (w.type) {
         case 'RoomWidget':
-            widgets.push(<RoomWidget name={w.name} key={index} />)
+            widgets.push(<RoomWidget name={w.name} key={index} config={w} />)
           break;
         case 'DeviceWidget':
-            widgets.push(<DeviceWidget name={w.name} key={index} />)
+            widgets.push(<DeviceWidget name={w.name} key={index} config={w} />)
           break;
         default:
           console.warn('Unknown widget type ' + w.type);

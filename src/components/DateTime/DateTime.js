@@ -5,7 +5,7 @@ class DateTime extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.date = 'Wed, 17th Nov 2019'
+    this.itemID = props.itemID;
   }
 
   componentDidMount() {}
@@ -14,7 +14,7 @@ class DateTime extends Component {
 
   render() {
     return (
-      <div><h3>{this.date}</h3></div>
+      <div><h3>Item ID: {this.itemID}</h3></div>
     )
   }
 }

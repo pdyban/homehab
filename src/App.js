@@ -17,10 +17,10 @@ class App extends Component {
     for(const w of this.props.config.widgets) {
       switch(w.type) {
         case 'DateTime':
-          dateTimeWidget = <DateTime config={this.props.config.common} />;
+          dateTimeWidget = <DateTime config={this.props.config.common} itemID={w.id} />;
           break;
         case 'Presence':
-          presenceWidget = <Presence config={this.props.config.common} />;
+          presenceWidget = <Presence config={this.props.config.common} itemID={w.id} />;
           break;
         default:
           widgets.push(w);

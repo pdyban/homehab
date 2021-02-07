@@ -5,24 +5,26 @@
   "widgets": [
     {
       "name": "datetime",
-      "type": "DateTime"
+      "type": "DateTime",
+      "id": "Date"
     },
     {
       "name": "presence",
-      "type": "Presence"
+      "type": "Presence",
+      "id": "AtHome"
     },
     {
       "name": "Living Room",
       "type": "RoomWidget",
       "elements": [
         {
-          "id": "livingroom_temperature",
-          "name": "Temperature",
+          "id": "ESPLivingroom_TemperatureLivingroom",
+          "type": "RoomTemperature",
           "refreshRate": 30
         },
         {
-          "id": "livingroom_humidity",
-          "name": "Humidity",
+          "id": "ESPLivingroom_HumidityLivingroom",
+          "type": "RoomHumidity",
           "refreshRate": 60
         }
       ]
@@ -30,7 +32,18 @@
     {
       "name": "Bathroom",
       "type": "RoomWidget",
-      "elements": []
+      "elements": [
+        {
+          "id": "ESPBathroom_TemperatureBathroom",
+          "type": "RoomTemperature",
+          "refreshRate": 30
+        },
+        {
+          "id": "ESPBathroom_HumidityBathroom",
+          "type": "RoomHumidity",
+          "refreshRate": 60
+        }
+      ]
     },
     {
       "name": "Vacuum Cleaner",

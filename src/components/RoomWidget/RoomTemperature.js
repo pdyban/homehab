@@ -1,13 +1,11 @@
-import './Presence.css'
+import './RoomTemperature.css'
 import React, { Component } from 'react';
 
-class Presence extends Component {
+class RoomTemperature extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      present: 'false'
     };
-    this.itemID = props.itemID;
   }
 
   componentDidMount() {}
@@ -16,9 +14,9 @@ class Presence extends Component {
 
   render() {
     return (
-      <div><h3>Item ID: {this.itemID}</h3></div>
+      <div><h4>Temperature: {this.props.itemID}</h4></div>
     )
   }
 }
 
-export default Presence;
+export default RoomTemperature;
