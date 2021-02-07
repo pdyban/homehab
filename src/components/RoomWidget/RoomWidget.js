@@ -1,6 +1,6 @@
 import './RoomWidget.css';
-import RoomTemperature from './RoomTemperature.js';
-import RoomHumidity from './RoomHumidity.js';
+import RoomTemperature from './RoomTemperature';
+import RoomHumidity from './RoomHumidity';
 import React, { Component } from 'react';
 
 class RoomWidget extends Component {

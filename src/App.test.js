@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import DateTime from './components/DateTime/DateTime.js';
-import Presence from './components/Presence/Presence.js';
-import WidgetBar from './components/WidgetBar/WidgetBar.js'
+import DateTime from './components/DateTime/DateTime';
+import Presence from './components/Presence/Presence';
+import WidgetBar from './components/WidgetBar/WidgetBar'
 import testConfig from './config.test.json';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';

@@ -1,6 +1,6 @@
 import './WidgetBar.css'
-import DeviceWidget from '../DeviceWidget/DeviceWidget.js'
-import RoomWidget from '../RoomWidget/RoomWidget.js'
+import DeviceWidget from '../DeviceWidget/DeviceWidget'
+import RoomWidget from '../RoomWidget/RoomWidget'
 import React, { Component } from 'react';
 
 class WidgetBar extends Component {
