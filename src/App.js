@@ -1,7 +1,7 @@
 import './App.scss';
-import DateTime from './components/DateTime/DateTime';
-import Presence from './components/Presence/Presence';
-import WidgetBar from './components/WidgetBar/WidgetBar'
+import DateTime from './components/DateTime';
+import Presence from './components/Presence';
+import WidgetBar from './components/WidgetBar'
 import React, { Component } from 'react';
 
 class App extends Component {
