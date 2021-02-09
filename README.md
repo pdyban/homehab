@@ -32,4 +32,16 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can deploy and run this using serve:
+
+# OpenHAB Setup
+OpenHAB's ReST API does not permit CORS by default. You need to enable CORS by
+modifying `/conf/services/runtime.cfg` file:
+
+```
+##################### CORS #####################
+# Allow CORS for Rest API access from other hostnames.
+org.eclipse.smarthome.cors:enable=true
+# For OpenHAB v.3 uncomment the following line:
+# org.openhab.cors:enable=true
+```
