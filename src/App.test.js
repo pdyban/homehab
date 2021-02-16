@@ -29,6 +29,11 @@ describe('HomeHAB test suite', () => {
     expect(screen.getByTestId('background').style).toHaveProperty('background-image');
   });
 
+  test('Render App without config', () => {
+    render(<App />)
+    expect(screen.getByTestID('background')).toBeEmpty();
+  })
+
   test('Render DateTime widget', async () => {
     render(<DateTime config={testConfig} itemID="testItemID" elements={mockAPI.sitemap.homepage.widgets[0].widgets} />);
     await waitFor(() => screen.getByTestId("DateTimeWidget"));

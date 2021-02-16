@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import config from './config.test.json'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App config={config}/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

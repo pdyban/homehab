@@ -10,8 +10,8 @@ class WidgetBar extends Component {
     this.state = {
       // widgets: []
     };
-    this.serverURL = props.config.serverURL;
-    this.sitemap = props.config.sitemap;
+    this.serverURL = props.serverURL;
+    this.sitemap = props.sitemap;
     this.widgets = [];
     this.mounted = true;
   }
