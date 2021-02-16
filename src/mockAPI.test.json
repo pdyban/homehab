@@ -2,11 +2,11 @@
   "sitemap": {
     "name": "homehab",
     "label": "HomeHAB",
-    "link": "http://openhab:8080/rest/sitemaps/homehab",
+    "link": "http://localhost/sitemaps/homehab",
     "homepage": {
       "id": "homeHAB",
       "title": "HomeHAB",
-      "link": "http://openhab:8080/rest/sitemaps/homeHAB/homeHAB",
+      "link": "http://localhost/sitemaps/homeHAB/homeHAB",
       "leaf": false,
       "timeout": false,
       "widgets": [
@@ -24,7 +24,7 @@
               "icon": "mock",
               "mappings": [],
               "item": {
-                "link": "http://openhab:8080/rest/items/Date",
+                "link": "http://localhost/items/Date",
                 "state": "2019-02-16T15:47:03.383+0100",
                 "stateDescription": {
                   "pattern": "%1$tA, %1$td/%1$tm/%1$tY",
@@ -48,7 +48,7 @@
               "icon": "mock",
               "mappings": [],
               "item": {
-                "link": "http://openhab:8080/rest/items/Time",
+                "link": "http://localhost/items/Time",
                 "state": "2021-02-16T15:47:03.383+0100",
                 "stateDescription": {
                   "pattern": "%1$tH:%1$tM",
@@ -81,7 +81,7 @@
               "icon": "mock",
               "mappings": [],
               "item": {
-                "link": "http://openhab:8080/rest/items/ESPLivingroom_TemperatureLivingroom",
+                "link": "http://localhost/items/ESPLivingroom_TemperatureLivingroom",
                 "state": "16.33",
                 "stateDescription": {
                   "step": 1,
@@ -110,7 +110,7 @@
               "icon": "mock",
               "mappings": [],
               "item": {
-                "link": "http://openhab:8080/rest/items/ESPLivingroom_HumidityLivingroom",
+                "link": "http://localhost/items/ESPLivingroom_HumidityLivingroom",
                 "state": "67.81000000000000227373675443232059478759765625",
                 "stateDescription": {
                   "minimum": 0,
@@ -138,5 +138,21 @@
         }
       ]
     }
+  },
+  "Date": {
+    "link": "http://localhost/items/Date",
+    "state": "2021-02-16T18:02:05.086+0100",
+    "stateDescription": {
+      "pattern": "%1$tA, %1$td/%1$tm/%1$tY",
+      "readOnly": true,
+      "options": []
+    },
+    "editable": false,
+    "type": "DateTime",
+    "name": "Date",
+    "label": "Date:",
+    "category": "calendar",
+    "tags": [],
+    "groupNames": []
   }
 }
