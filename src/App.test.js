@@ -31,7 +31,7 @@ describe('HomeHAB test suite', () => {
 
   test('Render App without config', () => {
     render(<App />)
-    expect(screen.getByTestID('background')).toBeEmpty();
+    expect(screen.getByTestId('SettingsWidget')).toBeInTheDocument();
   })
 
   test('Render DateTime widget', async () => {
