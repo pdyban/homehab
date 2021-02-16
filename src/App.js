@@ -16,25 +16,25 @@ class App extends Component {
     for(const w of this.props.config.widgets) {
       switch(w.type) {
         case 'DateTime':
-          dateTimeWidget = <DateTime config={this.props.config.common} itemID={w.id} />;
+          dateTimeWidget = <DateTime config={this.props.config} itemID={w.id} />;
           break;
         case 'Presence':
-          presenceWidget = <Presence config={this.props.config.common} itemID={w.id} />;
+          presenceWidget = <Presence config={this.props.config} itemID={w.id} />;
           break;
         default:
           widgets.push(w);
           break;
       }
     };
-    let widgetBarConfig = {
-      'common': this.props.config.common,
-      'widgets': widgets
-    };
+    // let widgetBarConfig = {
+    //   'common': this.props.config.common,
+    //   'widgets': widgets
+    // };
     return (
       <div className="App" data-testid="background">
       { dateTimeWidget }
       { presenceWidget }
-      <WidgetBar config={widgetBarConfig} />
+      <WidgetBar config={this.props.config} />
       </div>
     );
   }

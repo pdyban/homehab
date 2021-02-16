@@ -1,0 +1,142 @@
+{
+  "sitemap": {
+    "name": "homehab",
+    "label": "HomeHAB",
+    "link": "http://openhab:8080/rest/sitemaps/homehab",
+    "homepage": {
+      "id": "homeHAB",
+      "title": "HomeHAB",
+      "link": "http://openhab:8080/rest/sitemaps/homeHAB/homeHAB",
+      "leaf": false,
+      "timeout": false,
+      "widgets": [
+        {
+          "widgetId": "00",
+          "type": "Frame",
+          "label": "DateTimeWidget",
+          "icon": "mock",
+          "mappings": [],
+          "widgets": [
+            {
+              "widgetId": "0000",
+              "type": "Text",
+              "label": "DateElement [Tuesday, 16/02/2021]",
+              "icon": "mock",
+              "mappings": [],
+              "item": {
+                "link": "http://openhab:8080/rest/items/Date",
+                "state": "2019-02-16T15:47:03.383+0100",
+                "stateDescription": {
+                  "pattern": "%1$tA, %1$td/%1$tm/%1$tY",
+                  "readOnly": true,
+                  "options": []
+                },
+                "editable": false,
+                "type": "DateTime",
+                "name": "Date",
+                "label": "Date:",
+                "category": "calendar",
+                "tags": [],
+                "groupNames": []
+              },
+              "widgets": []
+            },
+            {
+              "widgetId": "0001",
+              "type": "Text",
+              "label": "TimeElement [15:15]",
+              "icon": "mock",
+              "mappings": [],
+              "item": {
+                "link": "http://openhab:8080/rest/items/Time",
+                "state": "2021-02-16T15:47:03.383+0100",
+                "stateDescription": {
+                  "pattern": "%1$tH:%1$tM",
+                  "readOnly": true,
+                  "options": []
+                },
+                "editable": false,
+                "type": "DateTime",
+                "name": "Time",
+                "label": "Time:",
+                "category": "time",
+                "tags": [],
+                "groupNames": []
+              },
+              "widgets": []
+            }
+          ]
+        },
+        {
+          "widgetId": "01",
+          "type": "Frame",
+          "label": "RoomWidget:LivingRoom",
+          "icon": "mock",
+          "mappings": [],
+          "widgets": [
+            {
+              "widgetId": "0100",
+              "type": "Text",
+              "label": "TemperatureElement [16.33 °C]",
+              "icon": "mock",
+              "mappings": [],
+              "item": {
+                "link": "http://openhab:8080/rest/items/ESPLivingroom_TemperatureLivingroom",
+                "state": "16.33",
+                "stateDescription": {
+                  "step": 1,
+                  "pattern": "%.2f °C",
+                  "readOnly": true,
+                  "options": []
+                },
+                "editable": false,
+                "type": "Number",
+                "name": "ESPLivingroom_TemperatureLivingroom",
+                "label": "Living room temperature",
+                "category": "temperature",
+                "tags": [],
+                "groupNames": [
+                  "Temperature",
+                  "Livingroom",
+                  "gInside"
+                ]
+              },
+              "widgets": []
+            },
+            {
+              "widgetId": "0101",
+              "type": "Text",
+              "label": "HumidityElement [68 %]",
+              "icon": "mock",
+              "mappings": [],
+              "item": {
+                "link": "http://openhab:8080/rest/items/ESPLivingroom_HumidityLivingroom",
+                "state": "67.81000000000000227373675443232059478759765625",
+                "stateDescription": {
+                  "minimum": 0,
+                  "maximum": 100,
+                  "step": 1,
+                  "pattern": "%d %%",
+                  "readOnly": true,
+                  "options": []
+                },
+                "editable": false,
+                "type": "Dimmer",
+                "name": "ESPLivingroom_HumidityLivingroom",
+                "label": "Living room humidity",
+                "category": "humidity",
+                "tags": [],
+                "groupNames": [
+                  "Humidity",
+                  "Livingroom",
+                  "gInside"
+                ]
+              },
+              "widgets": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "common": {
-    "serverURL": "http://openhab:8080"
+    "serverURL": "http://openhab:8080/rest"
   },
   "widgets": [
     {

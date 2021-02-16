@@ -9,7 +9,7 @@ class RoomWidget extends Component {
     this.state = {};
     this.name = props.name;
     this.elements = [];
-    for(const [index, element] of props.config.elements.entries()) {
+    for(const [index, element] of props.elements.entries()) {
       if(element.type === 'RoomTemperature') {
         this.elements.push(<RoomTemperature itemID={element.id} key={index} />);
       }
